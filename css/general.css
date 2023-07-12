@@ -1,0 +1,502 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	min-height: 100vh;
+	background-color: azure;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-family: "Roboto", sans-serif;
+}
+
+.encabezado {
+	background-color: #e4dccf;
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	padding: 5px;
+}
+
+.bloq_campos_tiempo {
+	width: 50%;
+}
+
+.bloque_tiempo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.descrip_tiempo {
+	display: flex;
+	flex-direction: row;
+}
+.descrip_tiempo .ico_tiempo {
+	margin: 0;
+	width: 25%;
+}
+.bloque_temperatura {
+	display: flex;
+	flex-direction: column;
+	text-transform: capitalize;
+	align-items: start;
+	justify-content: center;
+	width: 100%;
+	line-height: 1.25rem;
+}
+.bloque_temperatura .temp {
+	font-size: 1.2rem;
+	font-weight: 600;
+	line-height: 1.25rem;
+}
+.bloque_temperatura .descrip {
+	font-size: 0.8rem;
+	line-height: 1.25rem;
+}
+.bloque_temperatura .localidad {
+	font-size: 0.8rem;
+	line-height: 1.25rem;
+}
+
+.encabezado .encabezado_fijo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.encabezado_fijo img {
+	width: 170px;
+}
+
+.tit_principal {
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-align: center;
+	margin: 15px 0;
+	color: #155094;
+}
+.contenedor {
+	display: flex;
+	background-color: #f5f2ebfa;
+	flex-grow: 1;
+	padding-bottom: 10px;
+}
+.contenedor .estructura_contenido {
+	width: 100%;
+}
+.contenedor_gral {
+	background-color: white;
+	margin: 10px 0;
+	padding: 10px 0;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+}
+
+.contenedor_btn {
+	display: flex;
+	justify-content: center;
+	margin: 3px 0px 8px 0;
+}
+.btn_nuevo {
+	padding: 10px 20px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	background-color: rgb(91, 91, 236);
+	font-size: 1rem;
+	color: white;
+	font-weight: 700;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
+}
+.btn_nuevo:hover {
+	background-color: rgb(171, 171, 243);
+}
+
+.btn_form {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 15px;
+}
+.btn_guardar,
+.btn_volver {
+	width: 40vw;
+	padding: 10px 0;
+	margin: 0 5px;
+	font-size: 1rem;
+	font-weight: 700;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+}
+.btn_guardar {
+	background-color: rgb(40, 156, 40);
+	color: white;
+	cursor: pointer;
+}
+.btn_guardar:hover {
+	background-color: rgb(84, 202, 84);
+}
+.btn_volver {
+	background-color: gray;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+}
+.btn_volver:hover {
+	background-color: rgb(194, 194, 194);
+}
+
+.contenedor_form {
+	margin: 10px;
+}
+.bloque_datos {
+	display: flex;
+	flex-direction: column;
+}
+.bloque_campos {
+	display: flex;
+	flex-direction: column;
+	margin: 5px 0;
+}
+.label_form {
+	margin: 6px 0;
+	font-size: 1rem;
+	font-weight: 700;
+}
+.input_form,
+.textarea_form {
+	border: solid 1px gray;
+	font-size: 16px;
+	margin: 0;
+	outline: 0;
+	padding: 7px;
+	color: #64696d;
+	box-shadow: 2px 2px 6px gray;
+}
+
+.bloque_descripcion {
+	display: flex;
+	flex-direction: column;
+}
+
+.error_form {
+	color: red;
+	font-weight: 700;
+	margin-top: 5px;
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.pie_pagina {
+	background-color: #002b5b;
+	display: flex;
+	flex-direction: column;
+}
+.pie_pagina p {
+	color: white;
+	font-size: 1.1rem;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.contenedor_contacto {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.contenedor_contacto .btn_contacto {
+	padding: 10px 20px;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	background-color: whitesmoke;
+	color: #002b5b;
+	font-size: 1rem;
+	font-weight: 700;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
+	margin: 10px 0;
+}
+.contenedor_contacto .btn_contacto:hover {
+	background-color: #e1e3e7;
+}
+.contenedor_footer .contenedor_mapa {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.descrip_map {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	cursor: pointer;
+	margin: 5px 0;
+}
+.descrip_map span {
+	color: white;
+	font-size: 1.2rem;
+	margin-left: 5px;
+}
+.descrip_map span:hover {
+	color: orange;
+}
+
+.contenedor_mapa .mapa {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 10px;
+}
+.mapa .i_maps {
+	width: 95%;
+	height: 250px;
+}
+.contenedor_mapa .info_mapa p {
+	font-size: 1.1rem;
+	padding: 5px;
+	margin: 5px 0;
+}
+
+.oculto {
+	display: none;
+}
+
+/* MQ */
+@media screen and (min-width: 575px) {
+	.encabezado {
+		padding: 0;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.encabezado_fijo {
+		justify-content: end;
+		padding: 0 10px;
+	}
+
+	.bloque_tiempo {
+		margin-top: 5px;
+		display: flex;
+		align-items: start;
+		padding: 0 10px;
+	}
+
+	.tit_principal {
+		font-size: 2rem;
+	}
+	.contenedor_gral {
+		margin: 10px;
+		padding: 15px;
+	}
+
+	.pie_pagina p {
+		font-size: 1.2rem;
+	}
+
+	.descrip_map span {
+		font-size: 1.3rem;
+	}
+
+	.mapa .i_maps {
+		width: 80%;
+	}
+	.contenedor_mapa .info_mapa p {
+		font-size: 1.3rem;
+	}
+
+	.btn_guardar,
+	.btn_volver {
+		width: 40vw;
+	}
+	.contenedor_form {
+		margin: 0;
+	}
+	.bloque_datos {
+		display: flex;
+		flex-direction: column;
+	}
+	.bloque_campos {
+		margin: 5px;
+	}
+	.label_form {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.encabezado,
+	.contenedor {
+		padding: 0 25px;
+	}
+
+	.contenedor_gral {
+		padding: 20px;
+	}
+	.tit_principal {
+		font-size: 2.7rem;
+	}
+	.encabezado_fijo img {
+		width: 200px;
+	}
+
+	.pie_pagina p {
+		font-size: 1.2rem;
+	}
+
+	.descrip_map span {
+		font-size: 1.2rem;
+	}
+
+	.mapa .i_maps {
+		height: 300px;
+	}
+	.contenedor_mapa .info_mapa p {
+		font-size: 1.2rem;
+	}
+
+	.btn_guardar,
+	.btn_volver {
+		width: 30vw;
+		font-size: 1.2rem;
+	}
+	.contenedor_form {
+		padding: 0 30px;
+	}
+	.bloque_datos {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 20px;
+	}
+	.bloque_campos {
+		margin: 5px;
+	}
+	.label_form {
+		font-size: 1.3rem;
+	}
+	.input_form,
+	.textarea_form {
+		padding: 8px;
+		font-size: 1.2rem;
+	}
+	.descrip_tiempo {
+		width: 50%;
+	}
+	.bloque_temperatura .temp {
+		font-size: 1.5rem;
+	}
+	.bloque_temperatura .descrip {
+		font-size: 1.1rem;
+		line-height: 25px;
+	}
+	.bloque_temperatura .localidad {
+		font-size: 1.1rem;
+		line-height: 25px;
+	}
+}
+
+@media screen and (min-width: 1536px) {
+	.encabezado,
+	.contenedor {
+		padding: 0 50px;
+	}
+	.tit_principal {
+		padding: 25px 0;
+		font-size: 3.3rem;
+	}
+	.contenedor_gral {
+		padding: 50px;
+		padding-top: 0px;
+	}
+	.descrip_tiempo {
+		width: 50%;
+	}
+	.bloque_temperatura .temp {
+		font-size: 1.8rem;
+	}
+	.bloque_temperatura .descrip {
+		font-size: 1.3rem;
+		line-height: 25px;
+	}
+	.bloque_temperatura .localidad {
+		font-size: 1.3rem;
+		line-height: 25px;
+	}
+	.label_form {
+		font-size: 1.5rem;
+		line-height: 25px;
+	}
+	.encabezado_fijo img {
+		width: 225px;
+	}
+	.input_form,
+	.textarea_form {
+		padding: 10px;
+		font-size: 1.3rem;
+	}
+	.btn_guardar,
+	.btn_volver {
+		font-size: 1.5rem;
+	}
+	.contenedor_form {
+		padding: 20px;
+	}
+
+	.pie_pagina p {
+		font-size: 1.3rem;
+	}
+
+	.descrip_map span {
+		font-size: 1.3rem;
+	}
+
+	.mapa .i_maps {
+		height: 350px;
+	}
+	.contenedor_mapa .info_mapa p {
+		font-size: 1.3rem;
+	}
+}
